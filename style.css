@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+:root{
+    --color1: #212135;
+    --color2: #191928;
+    --color3: #be3c88;
+    --color4: #21f7ff;
+
+    --main-width: 1000px;
+
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    cursor: url('images/favicon.ico'),auto;
+    
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: var(--font0);
+    
+    
+}
+
+header{
+    display: flex;
+    font-family: var(--font1);
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+header nav{
+    margin: auto ;
+}
+
+header nav button{
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.315);
+
+
+    color: var(--color3);
+
+    padding: 3px 10px;
+    font-family: var(--font1);
+    font-size: 1em;
+    font-weight: bold;
+    margin: 2px;
+    transition: 0.2s;
+}
+nav button:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+
+main{
+    background-color: var(--color1);
+    max-width: var(--main-width);
+    font-family: var(--font1);
+    color: var(--color4);
+    border-radius: 25px;
+    margin: auto;
+}
+main h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--color3);
+}
+main h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color3);
+}
+main h3{
+    font-size: 1.5em;
+    color: var(--color3);
+}
+main p, a{
+    font-size: 1em;
+}
+
+#apresentation{
+    text-align: center;
+    padding: 30px 0;
+    margin: auto;
+    max-width: 400px;
+}
+#apresentation>img{
+    width: 200px;
+}
+
+
+#info{
+    margin: auto;
+    justify-content: space-between;
+}
+#about-me{
+    padding: 20px;
+    display: flex;
+    max-width: var(--main-width);
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#who-am-i{
+    text-align: center;
+    max-width: 400px;
+}
+
+#know-more{
+    max-width: 400px;
+    padding-top: 20px;
+
+;
+}
+#know-more h3{
+    padding-bottom: 10px;
+    text-align: center;
+}
+#know-more a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color4);
+}
+#know-more a:hover{
+    text-decoration: underline;
+}
+#know-more img{
+    width: 20px;
+    margin: 0 10px 5px 0;
+}
+
+
+#tec{
+    padding: 20px 0;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#tec-image{
+    margin-left: 70px;
+    width: 400px;
+    min-height: 230px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+#tec-image>*{
+    margin: 5px;
+    flex: 1 0 30%;
+    /*** Just to center the text ***/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#tec-info{
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+}
+
+
+#projects{
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+    max-width: var(--main-width);
+    text-align: center;
+}
+
+#projects article{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#projects article a{
+    width: 700px;
+    transition: 0.5s;
+    margin: 20px;
+}
+#projects article>a img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.473);
+}
+.gif{
+    display: none;
+}
+#projects article a:hover{
+    width: 1200px;
+    .gif{
+        display: block;
+    }
+    .png{
+        display: none;
+    }
+}
+
+
+#more a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color4);
+    margin: auto;
+}
+#more a:hover{
+    text-decoration: underline;
+}
+#more a img{
+    width: 20px;
+    margin: 5px;
+}
+
+
+#contact{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contact h3{
+    padding-bottom: 10px;
+}
+#contact a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color4);
+    padding-bottom: 5px;
+    margin: auto;
+}
+#contact a:hover{
+    text-decoration: underline;
+}
+
+
+.contact::before {
+    content: url(images/mail.svg);
+    height: 20px;
+    width: 30px;
+}
+
+footer{
+    background-color: var(--color2);
+    color: #7f7fcd;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--font1);
+    font-size: 0.7em;
+}
+footer strong{
+    font-weight: bold;
+}
