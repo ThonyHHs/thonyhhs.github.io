@@ -27,9 +27,7 @@ body{
     
     background-color: var(--color2);
     color: var(--color4);
-    font-family: var(--font0);
-    
-    
+    font-family: var(--font0); 
 }
 
 header{
