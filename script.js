@@ -1,6 +1,3 @@
-alert("Site ainda em desenvolvimento...");
-
-
 function irPara(name){
     let info = document.getElementById(name);
     let rect = info.getBoundingClientRect();
